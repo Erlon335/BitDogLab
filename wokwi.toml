@@ -1,0 +1,6 @@
+[wokwi]
+version = 1
+firmware = 'build/bitdoglab.uf2'
+elf = 'build/bitdoglab.elf'
+gdbServerPort=3333
+rfc2217ServerPort = 4000
