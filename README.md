@@ -1,8 +1,8 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=120&section=header"/>
-<h1 align="center"><img align="center" style="border-radius: 100%;" src="https://moodle.embarcatech.cepedi.org.br/pluginfile.php/1/theme_moove/logo/1733422525/Group%20658.png" width="300px;" alt=""><br><br>Conversores A/D</h1>
+<h1 align="center"><img align="center" style="border-radius: 100%;" src="https://moodle.embarcatech.cepedi.org.br/pluginfile.php/1/theme_moove/logo/1733422525/Group%20658.png" width="300px;" alt=""><br><br>BitDogLab</h1>
 
 <h3 align="center">
-    Conversores analógico-digitais (ADC) para a placa BitDogLab
+    Controlador de LEDs e Periféricos para a placa BitDogLab
 </h3>
 
 ---
@@ -28,7 +28,9 @@ Tabela de conteúdos
 
 ## 💻 Sobre o projeto
 
-O projeto de Conversores analógico-digitais (ADC) no RP2040 e explora as funcionalidades da placa de desenvolvimento BitDogLab, é um sistema teste desenvolvido para fixação e experimentação do conteúdo proposto pelo curso.
+O projeto BitDogLab é um sistema embarcado desenvolvido para a placa BitDogLab, com funcionalidades voltadas ao controle e monitoramento de periféricos, incluindo um display OLED, LEDs, botões e comunicação via I2C.
+
+Este projeto justifica-se por ser uma solução didática e acessível para aprendizado de sistemas embarcados, permitindo aos estudantes explorar conceitos fundamentais de eletrônica e programação.
 
 Projeto desenvolvido durante o curso de Formação Básica em Software Embarcado oferecido pela [Embarcatech](https://embarcatech.softex.br).
 A Formação Básica em Software Embarcado da Embarcatech é um programa de capacitação profissional técnica destinado a alunos de nível superior e técnico em Tecnologias da Informação e Comunicação (TIC) e áreas correlatas, focado em tecnologias de Sistemas Embarcados.
@@ -85,10 +87,11 @@ A Formação Básica em Software Embarcado da Embarcatech é um programa de capa
 ---
 
 ## ⚙️ Funcionalidades
-- Interrupção
-- Debouncing
-- Display 128 x 64
-- LED RGB
+- Microcontrolador: Responsável pelo processamento e controle geral.
+- Display OLED: Exibição de informações para o usuário.
+- NeoPixels: Iluminação RGB controlada via protocolo próprio.
+- Buzzer: Indicação sonora de eventos.
+- Sensores: Captura de informações do ambiente.
 
 ---
 
@@ -113,10 +116,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
   - Abra o terminal de comando Git Bash 
   - Clone o repositório do GitHub com o comando:
 ```
-$ git clone https://github.com/Erlon335/Conversores-A-D.git
+$ git clone https://github.com/Erlon335/BitDogLab.git
 ```
 - Opção 2:
-  - No repósitorio [Conversores A/D](https://github.com/Erlon335/Conversores-A-D) aperte o Botão <i><>code</i>
+  - No repósitorio [BitDogLab](https://github.com/Erlon335/BitDogLab) aperte o Botão <i><>code</i>
   - Aperte a opção <i>Dowload ZIP</i>
 
 
@@ -125,7 +128,7 @@ $ git clone https://github.com/Erlon335/Conversores-A-D.git
 #### Wokwi Web
 - Entre no navegador e digite [Wokwi.com]()
 - Faça Upload do projeto <i>diagram.json</i>
-- Faça upload dos aquivos <i>Conversor.c</i>, <i>ssd1306.c</i>, <i>ssd1306.h</i> e  <i>font.h</i>
+- Faça upload dos aquivos <i>bitdoglab.c</i>, <i>ssd1306.c</i>, <i>ssd1306.h</i>, <i>font.h</i> e <i>ws2818b.pio.h</i>
 
 #### Extensão Wokwi
 - Abra o Visual Studio
@@ -135,8 +138,8 @@ $ git clone https://github.com/Erlon335/Conversores-A-D.git
 ```
 [wokwi]
 version = 1
-firmware = 'build/Conversor.hex'
-elf = 'build/Conversor.elf'
+firmware = 'build/bitdoglab.hex'
+elf = 'build/bitdoglab.elf'
 ```
 - Abra o arquivo <i>diagram.json</i>
 
@@ -152,7 +155,7 @@ elf = 'build/Conversor.elf'
 - Na aba da extensão [Raspberry Pi Pico](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico), aperte para Importar o projeto
 - Compile o projeto
 - Entre na pasta <i>build/</i>
-- Cole o arquivo <i>Conversor.uf2</i> no armazenamento placa BitDog
+- Cole o arquivo <i>bitdoglab.uf2</i> no armazenamento placa BitDog
 <br>
 
 
@@ -160,20 +163,24 @@ elf = 'build/Conversor.elf'
 
 ## 🎥 Imagens do Projeto
 
-### 💿 Diagrama Visual do Projeto
-<p align="center"><img width="700" height="400" src="https://github.com/Erlon335/BitDogLab/blob/main/assets/Diagram%20BitDogLab.png"></p>
+### 💿 Diagrama Visual do Projeto no Wokwi
+<p align="center"><img width="700" height="400" src="https://github.com/Erlon335/BitDogLab/blob/main/assets/Diagrama%20BitDogLab.png"></p>
 
-### 💿 Video Demonstrativo do Projeto
-
-
+### 💿 Video Demonstrativo do Projeto na Placa
 
 
 
 
 
 
+<p align="center">https://github.com/user-attachments/assets/d81fbe14-d662-4b3b-a383-f226d2107ec8</p>
 
-- link para Dowload: (https://drive.google.com/file/d/1GCDhoC0VYBaeOPSTXtnPW5YM_bhKnsrJ/view?usp=drive_link)
+
+
+
+
+
+- link para Dowload: (https://drive.google.com/file/d/1HTZtXd0qhRAw7qP8tzSLDZZ7R78vbDt4/view?usp=sharing)
 
 ---
 
