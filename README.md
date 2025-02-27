@@ -40,7 +40,7 @@ A Formação Básica em Software Embarcado da Embarcatech é um programa de capa
 ## 🎨 Layout Repositorio Github
 <i>
 
-<h3>Temporizador Periodico/</h3>
+<h3>BitDogLab/</h3>
 
 - .vscode
   - c_cpp_properties.json
