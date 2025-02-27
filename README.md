@@ -57,11 +57,11 @@ A Formação Básica em Software Embarcado da Embarcatech é um programa de capa
 
 - CMakeLists.txt
 
-- Conversor.c
-
 - LICENSE
 
 - README.md
+
+- bitdoglab.c
 
 - diagram.json
 
@@ -74,6 +74,10 @@ A Formação Básica em Software Embarcado da Embarcatech é um programa de capa
 - ssd1306.h
 
 - wokwi.toml
+
+- ws2818b.pio
+
+- ws2818b.pio.h
 
 
 </i>
@@ -157,7 +161,7 @@ elf = 'build/Conversor.elf'
 ## 🎥 Imagens do Projeto
 
 ### 💿 Diagrama Visual do Projeto
-<p align="center"><img width="700" height="400" src="https://github.com/Erlon335/Conversores-A-D/blob/main/assets/Diagrama%20Conversores%20AD.png"></p>
+<p align="center"><img width="700" height="400" src="https://github.com/Erlon335/BitDogLab/blob/main/assets/Diagram%20BitDogLab.png"></p>
 
 ### 💿 Video Demonstrativo do Projeto
 
@@ -205,6 +209,6 @@ Mentor: MANOEL MESSIAS DA SILVA JUNIOR
 
 ## 📄 Licença
 
-Este projeto está sob a licença de Érlon Alves da Formação Básica em Software Embarcado da Embarcatech - Veja o arquivo <a href="https://github.com/Erlon335/Conversores-A-D/blob/main/LICENSE">License.md<a/>
+Este projeto está sob a licença de Érlon Alves da Formação Básica em Software Embarcado da Embarcatech - Veja o arquivo <a href="https://github.com/Erlon335/BitDogLab/blob/main/LICENSE">License.md<a/>
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=120&section=footer"/>
